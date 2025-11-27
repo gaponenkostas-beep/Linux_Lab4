@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat '"C:\\Загрузки\\vs_mkr_test1\\vs_mkr_test1\\x64\\Debug\\test_repos.exe"'
+                        bat '"C:\\Downloads\\vs_mkr_test1\\vs_mkr_test1\\x64\\Debug\\test_repos.exe"'
                     } catch (Exception e) {
                         echo "Test error: ${e.message}"
                         currentBuild.result = 'FAILURE'
