@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/gaponenkostas-beep/Linux_Lab4.git', credentialsId: 'access_for_jenkins'
+                git branch: 'main', url: 'https://github.com/gaponenkostas-beep/Linux_Lab4.git', credentialsId: 'access_for_jenkins'
             }
         }
         
